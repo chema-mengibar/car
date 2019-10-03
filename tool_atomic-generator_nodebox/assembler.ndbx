@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="41882a70-df6e-41b4-9320-185213988dad">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <link href="python:assembler_lib.py" rel="functions"/>
+    <node name="root" prototype="core.network" renderedChild="_GENERATOR3">
+        <node name="ATOM" position="0.00,-5.00" prototype="string.string">
+            <port name="value" type="string" value="atom"/>
+        </node>
+        <node name="MOLECULE" position="2.00,-1.00" prototype="string.string">
+            <port name="value" type="string" value="molecule"/>
+        </node>
+        <node name="ORGANISM" position="3.00,3.00" prototype="string.string">
+            <port name="value" type="string" value="organism"/>
+        </node>
+        <node name="ROOT_PATH" position="14.00,-5.00" prototype="string.string">
+            <port name="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\"/>
+        </node>
+        <node name="_GENERATOR1" position="3.00,-3.00" prototype="core.network" renderedChild="combine1">
+            <node name="ATOMIC" position="-5.00,-7.00" prototype="string.string"/>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT" outputType="string" position="-14.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT1" outputType="string" position="-1.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT2" outputType="string" position="12.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER" position="-14.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/index.tsx" widget="file"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER1" position="-1.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/{__name__}.stories.tsx" widget="file"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER2" position="12.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/{__name__}.mocks.tsx" widget="file"/>
+            </node>
+            <node name="NAME" position="-1.00,-7.00" prototype="string.string">
+                <port name="value" type="string" value="toast"/>
+            </node>
+            <node name="PATH" position="3.00,-7.00" prototype="string.string">
+                <port name="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX" position="-12.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="index.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX1" position="-1.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="stories.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX2" position="11.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="stories.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node name="combine1" position="-1.00,11.00" prototype="list.combine"/>
+            <node name="concatenate1" position="-5.00,5.00" prototype="string.concatenate">
+                <port name="string2" type="string" value="."/>
+                <port name="string3" type="string" value="stories"/>
+                <port name="string4" type="string" value="."/>
+                <port name="string5" type="string" value="tsx"/>
+            </node>
+            <node name="concatenate2" position="8.00,5.00" prototype="string.concatenate">
+                <port name="string2" type="string" value="."/>
+                <port name="string3" type="string" value="mocks"/>
+                <port name="string4" type="string" value="."/>
+                <port name="string5" type="string" value="tsx"/>
+            </node>
+            <port childReference="ATOMIC.value" description="" label="" name="value_1" range="value" type="string" value="atom" widget="string"/>
+            <port childReference="NAME.value" description="" label="" name="value_2" range="value" type="string" value="toast" widget="string"/>
+            <port childReference="PATH.value" description="" label="" name="value_3" range="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\" widget="string"/>
+            <conn input="COMPONENT.rawData" output="LOADER"/>
+            <conn input="COMPONENT.componentName" output="NAME"/>
+            <conn input="COMPONENT1.rawData" output="LOADER1"/>
+            <conn input="COMPONENT1.componentName" output="NAME"/>
+            <conn input="COMPONENT2.rawData" output="LOADER2"/>
+            <conn input="COMPONENT2.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX.content" output="COMPONENT"/>
+            <conn input="SAVER_INDEX.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX.rootPath" output="PATH"/>
+            <conn input="SAVER_INDEX1.rootPath" output="PATH"/>
+            <conn input="SAVER_INDEX1.content" output="COMPONENT1"/>
+            <conn input="concatenate1.string1" output="NAME"/>
+            <conn input="SAVER_INDEX1.filename" output="concatenate1"/>
+            <conn input="SAVER_INDEX1.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX2.rootPath" output="PATH"/>
+            <conn input="concatenate2.string1" output="NAME"/>
+            <conn input="SAVER_INDEX2.filename" output="concatenate2"/>
+            <conn input="SAVER_INDEX2.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX2.content" output="COMPONENT2"/>
+            <conn input="combine1.list1" output="SAVER_INDEX"/>
+            <conn input="combine1.list2" output="SAVER_INDEX1"/>
+            <conn input="combine1.list3" output="SAVER_INDEX2"/>
+            <conn input="SAVER_INDEX.componentType" output="ATOMIC"/>
+            <conn input="SAVER_INDEX1.componentType" output="ATOMIC"/>
+            <conn input="SAVER_INDEX2.componentType" output="ATOMIC"/>
+        </node>
+        <node name="_GENERATOR2" position="5.00,1.00" prototype="core.network" renderedChild="combine1">
+            <node name="ATOMIC" position="-5.00,-7.00" prototype="string.string"/>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT" outputType="string" position="-14.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT1" outputType="string" position="-1.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT2" outputType="string" position="12.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER" position="-14.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/index.tsx" widget="file"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER1" position="-1.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/{__name__}.stories.tsx" widget="file"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER2" position="12.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/{__name__}.mocks.tsx" widget="file"/>
+            </node>
+            <node name="NAME" position="-1.00,-7.00" prototype="string.string">
+                <port name="value" type="string" value="toast"/>
+            </node>
+            <node name="PATH" position="3.00,-7.00" prototype="string.string">
+                <port name="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX" position="-12.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="index.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX1" position="-1.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="stories.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX2" position="11.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="stories.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node name="combine1" position="-1.00,11.00" prototype="list.combine"/>
+            <node name="concatenate1" position="-5.00,5.00" prototype="string.concatenate">
+                <port name="string2" type="string" value="."/>
+                <port name="string3" type="string" value="stories"/>
+                <port name="string4" type="string" value="."/>
+                <port name="string5" type="string" value="tsx"/>
+            </node>
+            <node name="concatenate2" position="8.00,5.00" prototype="string.concatenate">
+                <port name="string2" type="string" value="."/>
+                <port name="string3" type="string" value="mocks"/>
+                <port name="string4" type="string" value="."/>
+                <port name="string5" type="string" value="tsx"/>
+            </node>
+            <port childReference="ATOMIC.value" description="" label="" name="value_1" range="value" type="string" value="" widget="string"/>
+            <port childReference="NAME.value" description="" label="" name="value_2" range="value" type="string" value="toast" widget="string"/>
+            <port childReference="PATH.value" description="" label="" name="value_3" range="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\" widget="string"/>
+            <conn input="COMPONENT.rawData" output="LOADER"/>
+            <conn input="COMPONENT.componentName" output="NAME"/>
+            <conn input="COMPONENT1.rawData" output="LOADER1"/>
+            <conn input="COMPONENT1.componentName" output="NAME"/>
+            <conn input="COMPONENT2.rawData" output="LOADER2"/>
+            <conn input="COMPONENT2.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX.content" output="COMPONENT"/>
+            <conn input="SAVER_INDEX.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX.rootPath" output="PATH"/>
+            <conn input="SAVER_INDEX1.rootPath" output="PATH"/>
+            <conn input="SAVER_INDEX1.content" output="COMPONENT1"/>
+            <conn input="concatenate1.string1" output="NAME"/>
+            <conn input="SAVER_INDEX1.filename" output="concatenate1"/>
+            <conn input="SAVER_INDEX1.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX2.rootPath" output="PATH"/>
+            <conn input="concatenate2.string1" output="NAME"/>
+            <conn input="SAVER_INDEX2.filename" output="concatenate2"/>
+            <conn input="SAVER_INDEX2.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX2.content" output="COMPONENT2"/>
+            <conn input="combine1.list1" output="SAVER_INDEX"/>
+            <conn input="combine1.list2" output="SAVER_INDEX1"/>
+            <conn input="combine1.list3" output="SAVER_INDEX2"/>
+            <conn input="SAVER_INDEX.componentType" output="ATOMIC"/>
+            <conn input="SAVER_INDEX1.componentType" output="ATOMIC"/>
+            <conn input="SAVER_INDEX2.componentType" output="ATOMIC"/>
+        </node>
+        <node name="_GENERATOR3" position="6.00,5.00" prototype="core.network" renderedChild="combine1">
+            <node name="ATOM" position="-5.00,-7.00" prototype="string.string"/>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT" outputType="string" position="-14.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT1" outputType="string" position="-1.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/replaceContent" name="COMPONENT2" outputType="string" position="12.00,2.00">
+                <port description="" label="" name="rawData" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="cactus" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER" position="-14.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/index.tsx" widget="file"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER1" position="-1.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/{__name__}.stories.tsx" widget="file"/>
+            </node>
+            <node description="Load file" function="assembler_lib/load" name="LOADER2" position="12.00,1.00">
+                <port description="" label="" name="filename" range="value" type="string" value="raw-parts/component_i-d-t_base/{__name__}.mocks.tsx" widget="file"/>
+            </node>
+            <node name="NAME" position="-1.00,-7.00" prototype="string.string">
+                <port name="value" type="string" value="toast"/>
+            </node>
+            <node name="PATH" position="3.00,-7.00" prototype="string.string">
+                <port name="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX" position="-12.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="index.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX1" position="-1.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="stories.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node description="Load file" function="assembler_lib/save" name="SAVER_INDEX2" position="11.00,7.00">
+                <port description="" label="" name="filename" range="value" type="string" value="stories.tsx" widget="string"/>
+                <port description="" label="" name="componentType" range="value" type="string" value="atom" widget="string">
+                    <menu key="atoms" label="Atom"/>
+                    <menu key="molecules" label="Molecule"/>
+                    <menu key="organisms" label="Organism"/>
+                </port>
+                <port description="" label="" name="content" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="componentName" range="value" type="string" value="" widget="string"/>
+                <port description="" label="" name="rootPath" range="value" type="string" value="" widget="string"/>
+            </node>
+            <node name="combine1" position="-1.00,11.00" prototype="list.combine"/>
+            <node name="concatenate1" position="-5.00,5.00" prototype="string.concatenate">
+                <port name="string2" type="string" value="."/>
+                <port name="string3" type="string" value="stories"/>
+                <port name="string4" type="string" value="."/>
+                <port name="string5" type="string" value="tsx"/>
+            </node>
+            <node name="concatenate2" position="8.00,5.00" prototype="string.concatenate">
+                <port name="string2" type="string" value="."/>
+                <port name="string3" type="string" value="mocks"/>
+                <port name="string4" type="string" value="."/>
+                <port name="string5" type="string" value="tsx"/>
+            </node>
+            <port childReference="ATOM.value" description="" label="" name="value_1" range="value" type="string" value="atom" widget="string"/>
+            <port childReference="NAME.value" description="" label="" name="value_2" range="value" type="string" value="toast" widget="string"/>
+            <port childReference="PATH.value" description="" label="" name="value_3" range="value" type="string" value="D:\PRO-CODE\git\car\tool\dist\" widget="string"/>
+            <conn input="COMPONENT.rawData" output="LOADER"/>
+            <conn input="COMPONENT.componentName" output="NAME"/>
+            <conn input="COMPONENT1.rawData" output="LOADER1"/>
+            <conn input="COMPONENT1.componentName" output="NAME"/>
+            <conn input="COMPONENT2.rawData" output="LOADER2"/>
+            <conn input="COMPONENT2.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX.content" output="COMPONENT"/>
+            <conn input="SAVER_INDEX.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX.componentType" output="ATOM"/>
+            <conn input="SAVER_INDEX.rootPath" output="PATH"/>
+            <conn input="SAVER_INDEX1.componentType" output="ATOM"/>
+            <conn input="SAVER_INDEX1.rootPath" output="PATH"/>
+            <conn input="SAVER_INDEX1.content" output="COMPONENT1"/>
+            <conn input="concatenate1.string1" output="NAME"/>
+            <conn input="SAVER_INDEX1.filename" output="concatenate1"/>
+            <conn input="SAVER_INDEX1.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX2.componentType" output="ATOM"/>
+            <conn input="SAVER_INDEX2.rootPath" output="PATH"/>
+            <conn input="concatenate2.string1" output="NAME"/>
+            <conn input="SAVER_INDEX2.filename" output="concatenate2"/>
+            <conn input="SAVER_INDEX2.componentName" output="NAME"/>
+            <conn input="SAVER_INDEX2.content" output="COMPONENT2"/>
+            <conn input="combine1.list1" output="SAVER_INDEX"/>
+            <conn input="combine1.list2" output="SAVER_INDEX1"/>
+            <conn input="combine1.list3" output="SAVER_INDEX2"/>
+        </node>
+        <node name="make_strings1" position="3.00,-5.00" prototype="string.make_strings">
+            <port name="string" type="string" value="input-text;input-textarea;button;menu-item"/>
+        </node>
+        <node name="make_strings2" position="5.00,-1.00" prototype="string.make_strings">
+            <port name="string" type="string" value="form;menu;search"/>
+        </node>
+        <node name="make_strings3" position="6.00,3.00" prototype="string.make_strings">
+            <port name="string" type="string" value="header"/>
+        </node>
+        <conn input="_GENERATOR1.value_3" output="ROOT_PATH"/>
+        <conn input="_GENERATOR1.value_2" output="make_strings1"/>
+        <conn input="_GENERATOR1.value_1" output="ATOM"/>
+        <conn input="_GENERATOR2.value_1" output="MOLECULE"/>
+        <conn input="_GENERATOR2.value_2" output="make_strings2"/>
+        <conn input="_GENERATOR2.value_3" output="ROOT_PATH"/>
+        <conn input="_GENERATOR3.value_2" output="make_strings3"/>
+        <conn input="_GENERATOR3.value_1" output="ORGANISM"/>
+        <conn input="_GENERATOR3.value_3" output="ROOT_PATH"/>
+    </node>
+</ndbx>
