@@ -10,6 +10,16 @@ to life by the CAD software.
 - https://www.industry.siemens.com/verticals/global/en/automotive-manufacturing/value-chain/product-design/Pages/index.aspx
 - https://www.youtube.com/playlist?list=PLw7lLwXw4H50C9Am3t3k1BSEmHKFz6MfO
 
+## Holistic approach for the entire value chain
+https://www.industry.siemens.com/verticals/global/en/automotive-manufacturing/value-chain/Pages/index.aspx
+
+1. Product design
+2. Production planning
+3. Production engineering
+4. Production execution
+5. Services
+
+
 ## 1. Product design
 
 Automotive product development is all about effciency, productivity and time-to-market.  
@@ -17,6 +27,8 @@ How can development engineers create a high-quality product in the shortest poss
 
 ### Product planning
 Product planning is the earliest phase of the product lifecycle. The concepts and ideas are turned into product requirements and program plans. Siemens' common collaboration platform provides core capabilities to manage this transition as well as providing a foundation for information management across the entire lifecycle of products and plants.
+
+https://www.industry.siemens.com/verticals/global/en/automotive-manufacturing/value-chain/production-planning/Pages/index.aspx  
 
 > - Nissan Technical Center Europe  
 Creating an award winning vehicle in record time
